@@ -1,3 +1,4 @@
+#!r6rs
 (library (elegant-weapons record-case-tests)
   (export record-case-tests)
   (import (rnrs)

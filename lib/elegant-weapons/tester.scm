@@ -1,3 +1,4 @@
+#!r6rs
 (library
     (elegant-weapons tester)
   (export run-tests define-test-suite)

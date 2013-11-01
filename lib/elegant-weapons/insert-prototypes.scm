@@ -1,3 +1,4 @@
+#!r6rs
 (library
     (elegant-weapons insert-prototypes)
   (export insert-prototypes)

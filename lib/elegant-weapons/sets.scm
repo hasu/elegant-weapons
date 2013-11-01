@@ -1,3 +1,4 @@
+#!r6rs
 (library
     (elegant-weapons sets)
   (export union set-add difference intersection subset? set-equal?

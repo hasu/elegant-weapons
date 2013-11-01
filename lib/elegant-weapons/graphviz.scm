@@ -1,3 +1,4 @@
+#!r6rs
 (library (elegant-weapons graphviz)
   (export dot->string write-dot)
   (import

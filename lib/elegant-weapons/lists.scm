@@ -1,3 +1,5 @@
+#!r6rs
+
 ;; A collection of macros and procedures for manipulating lists.
 (library (elegant-weapons lists)
   (export fold-right-values)

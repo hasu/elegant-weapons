@@ -1,3 +1,4 @@
+#!r6rs
 (library (elegant-weapons graphs)
   (export strongly-connected-components)
   (import (rnrs))

@@ -1,3 +1,5 @@
+#!r6rs
+
 ;;; match.ss
 
 ;;; This program was originally designed and implemented by Dan

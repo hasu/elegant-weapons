@@ -1,4 +1,4 @@
-#!elegant-weapons/language
+#!r6rs
 
 ;;; match.ss
 

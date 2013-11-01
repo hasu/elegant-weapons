@@ -8,20 +8,19 @@ where available.
 
 |#
 
-(provide add1 sub1 syntax-error make-parameter parameterize
-         last-pair make-list void)
-  
-;; Has the same interface as Scheme 'error', namely (syntax-error who
-;; msg irritant ...), where 'who' is (or/c string? symbol? #f) and
-;; 'msg' is a string, and 'irritants' are any objects. It seems that
-;; in practice an identifier? is also passed as 'who' in places.
-(define (syntax-error who msg . irritant)
-  (error
-   (cond
-    ((symbol? who) who)
-    ((identifier? who) (syntax-e who))
-    ((string? who) (string->symbol who))
-    (else #f))
-   (if (null? irritant)
-       msg
-       (format "~a: ~s" msg irritant))))
+(define-syntax-rule (re-export-at (phase spec) ...)
+  (begin
+    (require (for-meta phase (only-meta-in 0 spec)) ...)
+    (provide (for-meta phase (all-from-out spec)) ...)))
+
+;; R6RS APIs
+(re-export-at (2 rnrs))
+
+;; Rackety things like #%app and #%datum
+(re-export-at (2 r6rs/private/prelims))
+
+;; somewhat non-standard Scheme, mostly from Racket
+(re-export-at (-1 "compat-lib.rkt")
+              (0 "compat-lib.rkt")
+              (1 "compat-lib.rkt")
+              (2 "compat-lib.rkt"))

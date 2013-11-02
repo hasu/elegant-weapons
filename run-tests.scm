@@ -1,4 +1,7 @@
+#!r6rs
 (import
+ (rnrs)
+ 
  (elegant-weapons print-c)
  (elegant-weapons parse-c)
  (elegant-weapons tester)

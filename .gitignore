@@ -1,1 +1,15 @@
 *~
+lib/elegant-weapons/graphs.rkt
+lib/elegant-weapons/graphviz.rkt
+lib/elegant-weapons/helpers-tests.rkt
+lib/elegant-weapons/helpers.rkt
+lib/elegant-weapons/insert-prototypes.rkt
+lib/elegant-weapons/lists.rkt
+lib/elegant-weapons/match.rkt
+lib/elegant-weapons/parse-c.rkt
+lib/elegant-weapons/print-c.rkt
+lib/elegant-weapons/record-case-tests.rkt
+lib/elegant-weapons/record-case.rkt
+lib/elegant-weapons/sets-tests.rkt
+lib/elegant-weapons/sets.rkt
+lib/elegant-weapons/tester.rkt

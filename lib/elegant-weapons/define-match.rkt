@@ -15,7 +15,7 @@ enough to having the same semantics.
 
 (provide define-match)
 
-(require (only-in "match.scm" [match my-match]))
+(require (only-in "match.rkt" [match my-match]))
 
 (define-syntax-rule
   (sub-define-match name sig clauses ...)
